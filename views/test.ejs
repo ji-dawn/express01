@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('./includes/header.ejs') %>
+    <h1>안녕하세요</h1>
+    <% for (let i=0; i < 5; i++) { %>
+    <div>안녕하세요</div>
+    <div>hi<%=i%></div>
+    <img src="./static/image/pooh.png" alt="pooh <%=i%>" width="100px" />
+    <%}%>
+    <a href="/login.ejs">로그인</a>
+  </body>
+</html>
